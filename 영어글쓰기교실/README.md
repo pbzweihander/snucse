@@ -3,7 +3,7 @@
 
 <p align=right>동영상강의<br>College English Program Online Writing Tutorial<br>4. Understanding Paragraph Structure</p>
 
-Paragraph = A group of sentences that deal with **++one++ main idea** or **subject**
+Paragraph = A group of sentences that deal with **_one_ main idea** or **subject**
 
 *하나의* 주제를 다룬다는 것이 중요
 
