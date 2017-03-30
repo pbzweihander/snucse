@@ -81,11 +81,11 @@ unity에 더 알고싶으면 6번 강좌를 보자..
 		> <br>
 		> **Example 2:**  
 		> T: < Same as above >  
-		> S: In sum, prohibiting alcohol on campus could help promote good study habits, create a more supportive environment for students, and reduce the likelihood of alcohol-related accidents at SNU.  
+		> C: In sum, prohibiting alcohol on campus could help promote good study habits, create a more supportive environment for students, and reduce the likelihood of alcohol-related accidents at SNU.  
 		> <br>
 		> **Example 3:**  
 		> T: < Same as above >  
-		> S: Students, faculty, and staff should raise awareness in the SNU community on the benefits of a dry campus.
+		> C: Students, faculty, and staff should raise awareness in the SNU community on the benefits of a dry campus.
 
 		- 주로 하는 실수
 			- conclusion에서 새로운 idea를 제시하지 말자!
