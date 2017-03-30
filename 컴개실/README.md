@@ -3,13 +3,9 @@
 
 이 날 이전 노트는 에버노트에 작성해놈.. 에버노트 전에는 원노트에 작성해놈... (자꾸 뭐가 나은지 고민)
 
+---
+
 <p align=right>20170327</p>
-
-청문회 1시간째 진행 중... 겨수님,, 저희 진도 언제나가요
-
-수업 시간에는 언제든지 질문을 하세요
-
-15시 34분 드디어 진도를 나간다 (수업은 14시 30분부터 시작)
 
 instruction set architecture에는 기본적으로 memory가 있고, resister set이 있고, instruction set이 있다.
 
@@ -34,10 +30,8 @@ opcode는 기본적으로 3개의 분류
 - AND (Immediate) 0101 Dst Src1 1 Imm5
  - *Note: Immediate field is sign-extended*
 
-Date Movement Instruction
-
-load 인스트럭션에만 3개가 있음
-
+#### Date Movement Instruction  
+load 인스트럭션에만 3개가 있음  
 -> 다 주소값을 지정하는 방법이 다르다
 
 - LD, ST: 현재 PC 기준으로 메모리 주소 지칭
@@ -55,12 +49,10 @@ load 인스트럭션에만 3개가 있음
 
 이제 여러분이 필히 가지고 다녀야 하는 것... 책 525페이지에 해당하는 LC-5 Instruction Set
 
-가장 일반적인 내용이 LDR, STR, 레지스터의 값으로 지정하는 것
+주소값을 지정하는 가장 일반적인 방법이 LDR, STR. 레지스터의 값으로 지정하는 것
 
-앞으로는 conditional한 주소값 지정을 할 것 -> 그것이 컨트롤 인스트럭션..?
-
-그게 있어야 더 하이레벨 구현을 할 수 있다
-
+앞으로는 conditional한 주소값 지정을 할 것 -> 그것이 컨트롤 인스트럭션..?  
+그게 있어야 더 하이레벨 구현을 할 수 있다  
 그걸 다음시간에 배울 것
 
 TRAP: OS와의 연결 경로라고 생각. PC를 OS의 서비스 루틴 어쩌구에 가져다 놓고 끝나면 다시 돌아온다
@@ -84,8 +76,64 @@ Branch Instruction: 컨디션코드가 설정한 값과 맞으면 PC-relative하
 		- x21: R0에서 한글자를 모니터로 보낸다
 		- x25: 프로그램을 멈춘다
 
-~~ LC-3에서 클럭마다 데이터가 어떻게 넘어가는지에 대한 설명 ~~
+~ LC-3에서 클럭마다 데이터가 어떻게 넘어가는지에 대한 설명 ~
 
 현재시각 16시 30분.. 겨수님 저희 언제 끝나요
 
 다음 수업 있다는 친구의 발언으로 끝난다!!
+
+---
+
+<p align=right>20170329</p>
+
+LC-3 Data Path에서 옆에서 들어오는 LD.IR 같은 것들은 뭘까? :
+
+- control signals
+	- enable signals
+	- MUX select inputs
+	- function codes
+
+568페이지의 state machine 참조
+
+#### Data Path Components
+
+- Global bus
+	- 어떤 상태에서 단 한놈만 bus에 데이터를 넣는다.
+	- 데이터를 가져가는건 여러놈일 수 있음.
+- Memory
+- ALU
+- Register
+- PC & PCMUX
+- MAR & MARMUX
+- Condition Code Logic
+	- 저번에 말한거처럼 N, Z, P 중 하나
+- Control Unit - Finite State Machine
+
+모든 ISA는 하드웨어의 동작을 결정한다.  
+덧셈, 뺄셈, 메모리 및 레지스터의 정보 이동, branch나 jump처럼 PC의 지정 등  
+결국 3가지로 나뉨 :
+
+1. operate
+2. data movement
+3. control
+
+### Chapter 6
+
+처음부터 잘 짜면 디버그하는 시간이 준다..
+
+Problem Solving을 할때는 다음 3가지를 반복적으로 한다 :
+
+1. Sequential
+	- task1 -> task2
+2. Conditional
+	- condition -(true)-> task1
+	- -(false)-> task2
+3. Iterative
+	- condition -(true)-> task -> condition
+	- -(false)-> exit
+
+C를 하든 어셈을 하든.. 같은 방식이다
+
+어떤 방식을 사용할지 선택을 하는 것이 problem solving skills
+
+~ PPT에 있는 여러 예제에 관한 설명 (안들음) ~
