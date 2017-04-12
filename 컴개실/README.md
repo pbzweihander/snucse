@@ -14,3 +14,5 @@
 04월 05일 09번째 시간 이지만 사실상 휴강 [수업대체자료](http://archi.snu.ac.kr/courses/under/17_spring_computer_concept/slides/PattPatelCh07-2017-rec.ppt)
 
 [04월 10일 10번째 시간](20170410.md)
+
+[04월 12일 11번째 시간](20170412.md)
