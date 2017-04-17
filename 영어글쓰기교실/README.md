@@ -1,7 +1,11 @@
 영어글쓰기교실
 ===
 
+[홈페이지](http://cep.snu.ac.kr/cepwc/)
+
 [동영상 강의 필기](note.md)
+
+[주제](subject.md)
 
 [초고](draft.md)
 
