@@ -19,6 +19,10 @@
 
 [04월 17일 12번째 시간](20170417.md)
 
+[04월 19일 13번째 시간](20170419.md)
+
 ---
 
 [Harvard CS50](https://cs50.harvard.edu/) - 아마 시험 범위 내..
+
+[Harvard CS50 YouTube](https://www.youtube.com/playlist?list=PLhQjrBD2T382VRUw5ZpSxQSFrxMOdFObl)
